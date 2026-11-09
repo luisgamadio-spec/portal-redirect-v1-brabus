@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>O Portal F&amp;I mudou de endereço</title>
+<link rel="canonical" href="https://brabus.blistiq.com.br/">
+<meta http-equiv="refresh" content="0; url=https://brabus.blistiq.com.br/">
+<script>
+  // Links antigos de e-mail (primeiro acesso, verificação, conclusão) vão para a mesma página no novo endereço,
+  // mantendo o que vem depois de ? e #. Qualquer outro endereço antigo vai para a página inicial.
+  try {
+    var paginas = ["primeiro-acesso.html", "verificar-email.html", "verificar-acesso.html", "concluir-acesso.html"];
+    var nome = window.location.pathname.split("/").pop();
+    var destino = "https://brabus.blistiq.com.br/" + (paginas.indexOf(nome) >= 0 ? nome : "");
+    window.location.replace(destino + window.location.search + window.location.hash);
+  } catch (e) {}
+</script>
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0a0a; color: #eef0f1; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  main { min-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; text-align: center; box-sizing: border-box; }
+  h1 { font-size: 1.25rem; font-weight: 600; margin: 0; }
+  a { color: #fff; background: #c1121f; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  p { margin: 0; color: #9a9da2; font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>O Portal F&amp;I mudou de endereço</h1>
+  <p>Você será levado ao novo endereço automaticamente.</p>
+  <a href="https://brabus.blistiq.com.br/">Acessar brabus.blistiq.com.br</a>
+</main>
+</body>
+</html>
